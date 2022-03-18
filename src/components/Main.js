@@ -1,11 +1,11 @@
 import React, {Component} from 'react'
+import Filmes from './Filmes'
 import styled from 'styled-components'
 
 const Container = styled.section`
     height:100%;
     width: 100%;
     background-color: #6A040F;
-    align-items:center;
 `
 const Title = styled.h1`
   font-family: 'Merriweather Sans', sans-serif;
@@ -22,8 +22,6 @@ const Title = styled.h1`
 const Text = styled.p`
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 3vh;
-  display: flex;
-  align-items: center;
   text-align: justify;
   line-height: 1.5;
   width: 87vw;
@@ -31,26 +29,11 @@ const Text = styled.p`
   position: relative;
   top: 5vh;
   left: 4.68vw;
-  margin-bottom: 1vh;
 `
-const SubTitle = styled.h1`
-  font-family: 'Merriweather Sans', sans-serif;
-  position: relative;
-  top: 8vh;
-  left: 4.68vw;
-  font-size: 4.5vh;
-  color: black;
-  width: 10vw;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  text-align: center;
-`
-
 export default class Main extends Component{
   render(){
     return(
      <Container>
-      <div>
         <Title>Marvel Comics</Title>
         <Text>Marvel Comics é uma editora americana de histórias em quadrinhos.</Text>
         <Text>Fundada no começo da década de 1930 por Martin Goodman, a Marvel Comics foi originalmente chamada de Timely Comics.Seu fundador era editor de revistas que faziam sucesso com histórias de faroeste. Visionário, Martin Goodman expandiu seu trabalho no sentido de um mercado muito promissor. 
@@ -79,12 +62,8 @@ export default class Main extends Component{
           Ele não está mais ligado oficialmente à empresa, mas, recorrentemente, assina algumas edições especiais. No século XXI, a Marvel Comics criou também uma linha editorial para adolescentes mais velhos, a Marvel Knights, e uma para adultos, a MAX. 
           A empresa cresceu substancialmente com a parceria estabelecida com Holywood. Até que, em 2009, a Marvel Entertainment foi comprada pela Walt Disney Company por quatro bilhões de dólares. 
           O catálogo da Marvel possui cerca de cinco mil personagens, sendo que entre os mais famosos estão, Hulk, Homem-Aranha, Capitão América, O Justiceiro, Demolidor, Thor, Homem de Ferro, Blade, Motoqueiro Fantasma, o Quarteto Fantástico e os X-Men.</Text>  
-      </div>
-      <div>
-        <SubTitle>Triologia</SubTitle>
-      </div>
-    </Container>
-    
+     <Filmes/>
+     </Container>
     )
   }
 }

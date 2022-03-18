@@ -33,8 +33,8 @@ const Header = () => {
        </Image>
        <Menu>
           <List href=''><li>História</li></List>
-          <List href=''><li>Filmes</li></List>
-          <List href=''><li>Triologia</li></List>
+          <List href=''><li>Animações</li></List>
+          <List href=''><li>Trilogia:Filmes</li></List>
         </Menu>
      </section>
 
