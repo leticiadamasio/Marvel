@@ -32,9 +32,9 @@ const Header = () => {
         <></>
        </Image>
        <Menu>
-          <List href=''><li>História</li></List>
+          <List href='#Histórias'><li>História</li></List>
           <List href=''><li>Animações</li></List>
-          <List href=''><li>Trilogia:Filmes</li></List>
+          <List href='#Triologia:Filmes'><li>Trilogia:Filmes</li></List>
         </Menu>
      </section>
 

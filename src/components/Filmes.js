@@ -57,7 +57,7 @@ const Link = styled.a`
 export default class Filmes extends Component{
     render(){
         return(
-         <Container>
+         <Container id='Triologia:Filmes'>
             <SubTitle>Trilogia</SubTitle>
             <Intertitle>Marvel Studios: A ordem certa para assistir aos filmes e séries</Intertitle>
             <Text>Universo cinematográfico foi iniciado em 2008 com Homem de Ferro, mas tem uma ordem cronológica diferente dos seus lançamentos.</Text>

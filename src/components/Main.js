@@ -33,7 +33,7 @@ const Text = styled.p`
 export default class Main extends Component{
   render(){
     return(
-     <Container>
+     <Container id='História'>
         <Title>Marvel Comics</Title>
         <Text>Marvel Comics é uma editora americana de histórias em quadrinhos.</Text>
         <Text>Fundada no começo da década de 1930 por Martin Goodman, a Marvel Comics foi originalmente chamada de Timely Comics.Seu fundador era editor de revistas que faziam sucesso com histórias de faroeste. Visionário, Martin Goodman expandiu seu trabalho no sentido de um mercado muito promissor. 
