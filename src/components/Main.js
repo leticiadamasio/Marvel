@@ -3,32 +3,36 @@ import Filmes from './Filmes'
 import styled from 'styled-components'
 
 const Container = styled.section`
-    height:100%;
-    width: 100%;
-    background-color: #6A040F;
+  background-color: #6A040F;
 `
 const Title = styled.h1`
   font-family: 'Merriweather Sans', sans-serif;
-  position: relative;
-  top: 3vh;
-  left: 4.68vw;
   font-size: 4.5vh;
+  padding-top: 5vh;
+  margin-left: 4.68vw;
   color: black;
   width: 15vw;
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   text-align: center;
+  @media (max-width:375px){
+    font-size: 4vh;
+    width:45vw;
+  } 
+  @media (max-width:768px){
+    font-size: 4vh;
+    width:20vw;
+  }
 `
 const Text = styled.p`
   font-family: 'Merriweather Sans', sans-serif;
   font-size: 3vh;
+  margin-top: 1.75vh;
+  margin-left: 4.68vw;
   text-align: justify;
   line-height: 1.5;
   width: 87vw;
   color: black;
-  position: relative;
-  top: 5vh;
-  left: 4.68vw;
 `
 export default class Main extends Component{
   render(){

@@ -1,11 +1,16 @@
 import React, {Component} from 'react'
 import styled from 'styled-components'
-import Marvel from '../img/marvelstudios.png'
+import marvel from '../img/marvelstudios.png'
 
 const Image = styled.nav`
-    width: 100%;
-    height: 25%;
-    background-image: url(${Marvel})
+  height: 25vh;
+  background-image: url(${marvel});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  @media (max-width:375px){
+    height:21vh;
+  }
 `
 const Menu = styled.ul`
   list-style:none;
@@ -15,6 +20,9 @@ const Menu = styled.ul`
   justify-content: space-evenly;
   color: black;
   background-color: #370617;
+  @media (max-width:375px){
+    font-size: 2.6vh;
+  }
 `
 const List =styled.a`
    text-decoration:none;
@@ -23,8 +31,13 @@ const List =styled.a`
    display:flex;
    align-items: center;
    justify-content: center;
+   @media (max-width:375px){
+    width:35%;
+  }
+  @media (max-width:768px){
+    width:65%;
+  }
 `
-
 const Header = () => {
     return(
      <section>
@@ -34,7 +47,7 @@ const Header = () => {
        <Menu>
           <List href='#Histórias'><li>História</li></List>
           <List href=''><li>Animações</li></List>
-          <List href='#Triologia:Filmes'><li>Trilogia:Filmes</li></List>
+          <List href='#Triologia:Filmes'><li>Trilogia: Filmes</li></List>
         </Menu>
      </section>
 
